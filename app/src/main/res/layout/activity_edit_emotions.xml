@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditEmotionsActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="360dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Editing emotion..."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newDatePrompt"
+        android:layout_width="165dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:text="Select new Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newEmotionPrompt" />
+
+    <TextView
+        android:id="@+id/newEmotionPrompt"
+        android:layout_width="165dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Select new emotion..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/sendOptionalText"
+        android:layout_width="203dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="17dp"
+        android:onClick="submitOnClick"
+        android:text="submit changes"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionalText" />
+
+    <Button
+        android:id="@+id/deleteEmotionButton"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginRight="121dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="32dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendOptionalText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="107dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="107dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="91dp"
+        android:text="Add new comment (up to 100 characters)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newDatePrompt" />
+
+    <Button
+        android:id="@+id/calendarDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="47dp"
+        android:text="calendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/newDatePrompt"
+        app:layout_constraintTop_toBottomOf="@+id/emotionsDisplay" />
+
+    <Button
+        android:id="@+id/emotionsDisplay"
+        android:layout_width="111dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:text="emotions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/newEmotionPrompt"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/optionalText"
+        android:layout_width="356dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</android.support.constraint.ConstraintLayout>
