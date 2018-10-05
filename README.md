@@ -16,5 +16,4 @@ https://stackoverflow.com/questions/14933330/datepicker-how-to-popup-datepicker-
 In-class references
 https://github.com/shidahe/lonelyTwitter/tree/2947a4af8a461687bf62439b9a589905998c82f8
 
-Discussions
 Danill Tiganov: We've discussed about the structures of the application, he inspired me with the idea of adding a DatePicker and EmotionPicker.
